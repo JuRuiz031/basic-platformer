@@ -1,0 +1,165 @@
+[gd_scene load_steps=9 format=3 uid="uid://corgpa1yhjva6"]
+
+[ext_resource type="Texture2D" uid="uid://bd8n3lh8n40w0" path="res://Assets/Background/back.png" id="1_kugh1"]
+[ext_resource type="Script" path="res://bg.gd" id="1_pe5au"]
+[ext_resource type="Texture2D" uid="uid://cfu23p4n7adeq" path="res://Assets/Background/middle.png" id="2_mpetf"]
+[ext_resource type="Texture2D" uid="uid://dxdphigcnny2q" path="res://Assets/Background/clouds.png" id="3_36nc8"]
+[ext_resource type="Texture2D" uid="uid://3fusy1gftpah" path="res://Assets/Background/boat-far.png" id="3_tnlvd"]
+[ext_resource type="Texture2D" uid="uid://dddc3yy7rfiih" path="res://Assets/Background/tree.png" id="6_klg2c"]
+[ext_resource type="Texture2D" uid="uid://bwbolooytysap" path="res://Assets/Background/tree-house.png" id="7_hhbfq"]
+[ext_resource type="Texture2D" uid="uid://um6pbh1ivm2b" path="res://Assets/Background/plant-house.png" id="8_8qv0f"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_pe5au")
+
+[node name="Back" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.4, 1)
+motion_mirroring = Vector2(1192, 0)
+
+[node name="Back" type="Sprite2D" parent="Back"]
+position = Vector2(575, 321)
+scale = Vector2(3.23828, 2.95417)
+texture = ExtResource("1_kugh1")
+metadata/_edit_lock_ = true
+
+[node name="Boat-far" type="Sprite2D" parent="Back"]
+position = Vector2(338, 356)
+texture = ExtResource("3_tnlvd")
+
+[node name="Boat-far2" type="Sprite2D" parent="Back"]
+position = Vector2(1063, 371)
+texture = ExtResource("3_tnlvd")
+
+[node name="Clouds" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1132, 0)
+
+[node name="Cloud" type="Sprite2D" parent="Clouds"]
+position = Vector2(170, 353)
+scale = Vector2(1.10566, 1.0493)
+texture = ExtResource("3_36nc8")
+metadata/_edit_lock_ = true
+
+[node name="Cloud2" type="Sprite2D" parent="Clouds"]
+position = Vector2(567, 395)
+scale = Vector2(0.827342, 0.820423)
+texture = ExtResource("3_36nc8")
+metadata/_edit_lock_ = true
+
+[node name="Cloud3" type="Sprite2D" parent="Clouds"]
+position = Vector2(931, 392)
+scale = Vector2(0.879902, 0.642606)
+texture = ExtResource("3_36nc8")
+metadata/_edit_lock_ = true
+
+[node name="Middle" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.85, 1)
+motion_mirroring = Vector2(1241, 0)
+
+[node name="Middle" type="Sprite2D" parent="Middle"]
+position = Vector2(64, 507)
+texture = ExtResource("2_mpetf")
+metadata/_edit_lock_ = true
+
+[node name="Middle9" type="Sprite2D" parent="Middle"]
+position = Vector2(-63, 507)
+texture = ExtResource("2_mpetf")
+metadata/_edit_lock_ = true
+
+[node name="Middle2" type="Sprite2D" parent="Middle"]
+position = Vector2(206, 506)
+texture = ExtResource("2_mpetf")
+metadata/_edit_lock_ = true
+
+[node name="Middle3" type="Sprite2D" parent="Middle"]
+position = Vector2(369, 506)
+texture = ExtResource("2_mpetf")
+metadata/_edit_lock_ = true
+
+[node name="Middle4" type="Sprite2D" parent="Middle"]
+position = Vector2(518, 506)
+texture = ExtResource("2_mpetf")
+metadata/_edit_lock_ = true
+
+[node name="Middle5" type="Sprite2D" parent="Middle"]
+position = Vector2(685, 505)
+texture = ExtResource("2_mpetf")
+metadata/_edit_lock_ = true
+
+[node name="Middle6" type="Sprite2D" parent="Middle"]
+position = Vector2(841, 504)
+texture = ExtResource("2_mpetf")
+metadata/_edit_lock_ = true
+
+[node name="Middle7" type="Sprite2D" parent="Middle"]
+position = Vector2(1003, 503)
+texture = ExtResource("2_mpetf")
+metadata/_edit_lock_ = true
+
+[node name="Middle8" type="Sprite2D" parent="Middle"]
+position = Vector2(1148, 501)
+texture = ExtResource("2_mpetf")
+metadata/_edit_lock_ = true
+
+[node name="Near-Front" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1200, 0)
+metadata/_edit_lock_ = true
+
+[node name="Tree" type="Sprite2D" parent="Near-Front"]
+position = Vector2(112, 534)
+texture = ExtResource("6_klg2c")
+metadata/_edit_lock_ = true
+
+[node name="Tree2" type="Sprite2D" parent="Near-Front"]
+position = Vector2(224, 596)
+texture = ExtResource("6_klg2c")
+metadata/_edit_lock_ = true
+
+[node name="Tree3" type="Sprite2D" parent="Near-Front"]
+position = Vector2(796, 590)
+texture = ExtResource("6_klg2c")
+metadata/_edit_lock_ = true
+
+[node name="Tree-house" type="Sprite2D" parent="Near-Front"]
+position = Vector2(1004, 545)
+texture = ExtResource("7_hhbfq")
+metadata/_edit_lock_ = true
+
+[node name="Plant-house" type="Sprite2D" parent="Near-Front"]
+position = Vector2(1007, 598)
+texture = ExtResource("8_8qv0f")
+metadata/_edit_lock_ = true
+
+[node name="Front" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1200, 0)
+metadata/_edit_lock_ = true
+
+[node name="Plant-house" type="Sprite2D" parent="Front"]
+position = Vector2(81, 596)
+texture = ExtResource("8_8qv0f")
+metadata/_edit_lock_ = true
+
+[node name="Tree-house" type="Sprite2D" parent="Front"]
+position = Vector2(473, 578)
+texture = ExtResource("7_hhbfq")
+metadata/_edit_lock_ = true
+
+[node name="Plant-house2" type="Sprite2D" parent="Front"]
+position = Vector2(729, 597)
+texture = ExtResource("8_8qv0f")
+metadata/_edit_lock_ = true
+
+[node name="Tree2" type="Sprite2D" parent="Front"]
+position = Vector2(656, 593)
+texture = ExtResource("6_klg2c")
+metadata/_edit_lock_ = true
+
+[node name="Tree" type="Sprite2D" parent="Front"]
+position = Vector2(923, 597)
+texture = ExtResource("6_klg2c")
+metadata/_edit_lock_ = true
+
+[node name="Tree3" type="Sprite2D" parent="Front"]
+position = Vector2(1073, 602)
+texture = ExtResource("6_klg2c")
+metadata/_edit_lock_ = true
